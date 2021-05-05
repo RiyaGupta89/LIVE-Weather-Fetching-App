@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container {
+  background-color: rgb(246, 246, 246);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: #9cb4d1;
+  width: 210px;
+  height: 270px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px -7px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  position: relative;
+}
+
+.inputData {
+  text-align: center;
+  max-width: 100%;
+  margin: 8px 0;
+}
+
+.inputField {
+  border-radius: 15px;
+  width: 55%;
+  padding: 6px;
+  font-size: 11px;
+  border: 1px solid #393e46;
+}
+
+.inputField:focus {
+  outline: none;
+}
+
+.subBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.subBox-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subBox-2 h2 {
+  margin-bottom: 0;
+  z-index: 3;
+}
+
+.subBox-2 p {
+  margin-top: 0;
+  font-size: 12px;
+  z-index: 3;
+}
+
+.subBox i {
+  color: #fff;
+  margin-bottom: -7px;
+}
+
+.subBox h2 {
+  font-size: 40px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.wave {
+  position: absolute;
+  top: 180%;
+  left: 50%;
+  background: #fff;
+  width: 50rem;
+  height: 50rem;
+  transform-origin: 50% 48%;
+  border-radius: 53%;
+  animation: drift 3000ms infinite linear;
+  z-index: 1;
+  opacity: 0.3;
+  margin-left: -25rem;
+  margin-top: -20rem;
+}
+
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+  opacity: 0.2;
+  z-index: 2 !important;
+}
+
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: 0.1;
+  z-index: 3 !important;
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+/* font-family: 'Roboto', sans-serif; */
